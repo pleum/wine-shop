@@ -89,6 +89,7 @@ func TestNewWineFromFile(t *testing.T) {
 				assert.Equal(expectedWine.Winery, wines[idx].Winery)
 				assert.Equal(expectedWine.WineType, wines[idx].WineType)
 				assert.Equal(expectedWine.Rating, wines[idx].Rating)
+				assert.Equal(expectedWine.Vintage, wines[idx].Vintage)
 				assert.True(expectedWine.UnitPrice.Equal(wines[idx].UnitPrice))
 				assert.Equal(now, wines[idx].EntryTime)
 			}
